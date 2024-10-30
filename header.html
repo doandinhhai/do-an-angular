@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asset/Snaptik.app_739654317403603278914.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="asset/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <!-- logo -->
+            <div class="logo">
+                <img src="asset/logo_allgoods-removebg-preview.png" alt="">
+            </div>
+
+            <!-- Tìm kiếm -->
+            <form action="" class="search-form">
+                <div class="search-wrapper">
+                    <input type="text" class="input-search" placeholder="Bạn muốn tìm gì..." name="key"
+                        autocomplete="off" maxlength="100">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <div id="search-result" style="display: none;"></div>
+            </form>
+
+            <!-- Giỏ hàng -->
+            <a href="#" class="cart size">
+                <div class="cart-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>[1]</span>
+                </div>
+                <span>Giỏ hàng</span>
+            </a>
+
+            <!-- Tài khoản -->
+            <div class="account size">
+                <a href="" class="account-box">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Tài khoản</span>
+                </a>
+            </div>
+
+            <!-- Chọn vị trí -->
+            <form action="" class="search-form location">
+                <input type="text" class="input-search" placeholder="TP. Hồ Chí Minh">
+                <button type="submit">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
+
+
+#header {
+    background-color: #BBE1FA;
+}
+
+/* Cài đặt cho header-top */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 52px; 
+}
+
+/* Cài đặt cho logo */
+.logo > img {
+    width: 228px;
+    height: 40px; 
+    object-fit: cover; 
+}
+
+/* Search box */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+.search-wrapper {
+    position: relative;
+    width: 415px;
+    height: 40px; 
+}
+.input-search {
+    width: 100%; 
+    border: none;
+    outline: none;
+    padding: 8px 30px 8px 12px; 
+    border-radius: 20px; 
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    height: 100%; 
+}
+.input-search::placeholder {
+    color: #888;
+}
+.search-icon {
+    background: none;
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    position: absolute; 
+    right: 12px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+/* Search box end */
+
+
+/* cart and account */
+
+.size{
+    width: 110px;
+    height: 42px;
+}
+
+/* cart */
+.cart-box{
+    color: #333;
+    border-radius: 4px;
+    text-align: center;
+}
+.cart-box>i{
+font-size: 1.35rem;
+}
+/* cart end */
+
+/* cart and account end */
+
+
+
